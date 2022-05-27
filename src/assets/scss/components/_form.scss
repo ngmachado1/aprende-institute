@@ -1,0 +1,197 @@
+.form_box {
+    max-width: 18rem;
+    background-color: $white;
+    box-shadow: 0px 0px 6px #00000029;
+    border-radius: 5px;
+    padding: 1.5rem;
+    color: $lightBlack;
+    margin: 0 auto 2rem auto;
+    & h2 {
+        text-align: center;
+    }
+    & p.form {
+        text-align: center;
+        font-size: 0.875rem;
+    }
+}
+
+.dropdown-toggle {
+    min-width: 83px;
+    background-color: $white;
+    border-radius: 3px 0 0 3px;
+    color: $darkgrey;
+    border: 1px solid $gray;
+    padding: 0px;
+    & img {
+        width: 16px;
+    }
+}
+.dropdown-menu {
+    position: absolute;
+    top: 1rem;
+    background-color: $white;
+    padding: 0 0 0 1.1rem;
+    border: 1px solid $gray;
+    width: 83px;
+    z-index: 2;
+    border-top: none;
+    & li {
+        list-style-type: none;
+        padding: 0.5rem 0;
+        & img {
+            width: 16px;
+        }
+    }
+}
+
+.input-form {
+    height: 40px;
+    margin: 0.62rem 0px;
+    position: relative;
+}
+.input-group {
+    display: flex;
+    position: relative;
+}
+
+.form-control {
+    background-color: $white;
+    border-radius: 3px;
+    border: 1px solid $gray;
+    box-sizing: border-box;
+    color: $darkgrey;
+    font-size: 13px;
+    height: 100%;
+    outline: 0;
+    padding: 0.71rem 1.25rem;
+    width: 100%;
+}
+
+.box-label {
+    background-color: $white;
+    height: 15px;
+    left: 20px;
+    position: absolute;
+    top: -3px;
+    transform: translateY(12px);
+    transition: transform 200ms;
+    width: 60px;
+}
+.box-label-large {
+    width: 120px;
+}
+.box-label-phone {
+    left: 100px;
+}
+.form-control:focus ~ .box-label,
+.form-control:not(:placeholder-shown) ~ .box-label {
+    transform: translateY(-6px);
+}
+
+.placeholder {
+    color: $gray;
+    left: 20px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 9px;
+}
+.placeholder-phone {
+    color: $gray;
+    left: 100px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 9px;
+}
+.form-control:focus ~ .placeholder,
+.form-control:not(:placeholder-shown) ~ .placeholder {
+    transform: translateY(-18px) translateX(10px) scale(0.75);
+}
+
+.form-control:focus ~ .placeholder-phone,
+.form-control:not(:placeholder-shown) ~ .placeholder-phone {
+    transform: translateY(-18px) translateX(10px) scale(0.75);
+}
+
+.form-control:not(:placeholder-shown) ~ .placeholder,
+.form-control:not(:placeholder-shown) ~ .placeholder-phone {
+    color: #808097;
+}
+
+.form-control:focus ~ .placeholder,
+.form-control:focus ~ .placeholder-phone {
+    color: #5256a3;
+}
+
+.input-form_checkbox {
+    display: block;
+    position: relative;
+    padding-left: 18px;
+    margin-bottom: 7px;
+    cursor: pointer;
+    font-size: 9px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.input-form_checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
+}
+
+.input-form_checkbox:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.input-form_checkbox input:checked ~ .checkmark {
+    background-color: #42a318;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.input-form_checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.input-form_checkbox .checkmark:after {
+    left: 5px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid $white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.input-form_message {
+    font-size: 0.75rem;
+}
+.rotate{
+
+    transform: rotate(180deg);
+}
+.fa-angle-down{
+    transition: all .3s;
+}

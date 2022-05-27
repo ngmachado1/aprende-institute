@@ -1,0 +1,59 @@
+/* GRID SYSTEM */
+$cols       :   12;
+$gap        :   24px;
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    padding-left: calc($gap / 2);
+    padding-right: calc($gap / 2);
+    align-items: stretch;
+    max-width: 1320px;
+}
+
+.gs-grid{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc($gap / -2);
+    margin-right: calc($gap / -2);
+}
+
+[class*="col-"],
+.col{
+    width: 100%;
+    max-width: 100%;
+    padding-left: calc($gap / 2);
+    padding-right: calc($gap / 2);
+}
+
+@mixin grid-system($mq){
+    .#{ $mq }{
+        flex: 1 0 0;
+    }
+    
+    @for $col from 1 through $cols{
+        .#{ $mq }-#{ $col }{
+            flex: 0 0 calc((100% / $cols) * $col);
+            max-width: calc((100% / $cols) * $col);
+        }
+    }
+}
+
+@include grid-system(col);
+
+@media screen and (min-width: 576px){
+    @include grid-system(sm-col)
+}
+
+@media screen and (min-width: 768px){
+    @include grid-system(md-col)
+}
+
+@media screen and (min-width: 992px){
+    @include grid-system(lg-col)
+}
+
+@media screen and (min-width: 1200px){
+    @include grid-system(xl-col)
+
+}

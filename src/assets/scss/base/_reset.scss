@@ -1,0 +1,44 @@
+
+*,
+*:before,
+*::after {
+    box-sizing: border-box;
+}
+html,
+body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'source-sans-pro-regular';
+}
+.d-flex{
+    display: flex;
+}
+.text-center{
+    text-align: center;
+    width: 100%;
+}
+
+.mx-auto{
+    display: block;
+    margin: 0 auto;
+}
+.mt-5{
+    margin-top: 5rem;
+}
+.mt-auto{
+    margin-top: auto;
+}
+
+.ml-auto{
+    display: block;
+    margin-left: auto;
+}
+.mr-auto{
+    display: block;
+    margin-right: auto;
+}
+.d-none{
+    display: none;
+}

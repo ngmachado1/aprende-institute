@@ -1,0 +1,136 @@
+@import "../components/navbar";
+.hero_box {
+    background-image: url("../Images/hero.png");
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.bg-gradient {
+    background: transparent
+        linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 40%, #000 100%) 0% 0%
+        no-repeat padding-box;
+}
+
+.heading {
+    & h1 {
+        font-family: "collier-book";
+        font-size: 30px;
+        margin-bottom: 15px;
+        text-align: center;
+        margin-top: 311px;
+    }
+    & h1,
+    span {
+        color: $white;
+    }
+    & p {
+        color: $gray;
+        line-height: 22px;
+        margin-top: 0px;
+    }
+}
+mark {
+    background-color: #5256a3;
+    padding: 0 1.25rem;
+    color: $white;
+}
+
+.services_section {
+    background-color: $blue;
+}
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.service-content-box {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 90%;
+    margin: 0.8rem;
+}
+.service-image {
+    padding-right: 20px;
+}
+.service-body {
+    & p {
+        &.title {
+            margin-top: 0px;
+            color: $white;
+            font-size: 16px;
+            margin-bottom: 0px;
+        }
+        &.text {
+            color: $darkgrey;
+            font-size: 14px;
+            margin-top: 0.8rem;
+        }
+    }
+}
+.courses h3 {
+    font-size: 30px;
+    font-family: "collier-book";
+    color: $blue;
+}
+.card {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1607843137);
+    border-radius: 5px;
+    max-width: 272px;
+    padding-bottom: 2rem;
+    margin: 0.5rem auto;
+    min-height: 295px;
+    display: flex;
+    flex-direction: column;
+    & .image-card{
+        width: 100%;
+        & img{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    & .body-card{
+        font-size: 18px;
+        font-family: 'collier-book';
+        color: $lightBlack;
+        text-align: center;
+        & h5{
+            margin: 15px 20px 12px 20px;
+        }
+    }
+}
+.filters{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+.show-more{
+    margin-top: 30px;
+}
+footer{
+    background-color: $blue;
+    padding: 20px;
+    margin-top: 50px;
+    & hr{
+        width: 95%;
+        background-color: $lightBlack;
+        border: 1px solid $lightBlack;
+    }
+    & .details{
+        text-align: center;
+        color: $white;
+        & a{
+            color: $white;
+            padding: 0.5em;
+        }
+    }
+}
+.social_media_box{
+    align-items: center;
+    justify-content: center;
+    & img{
+        padding: 1rem;
+    }
+}

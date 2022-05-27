@@ -1,0 +1,10 @@
+.navbar{
+    background-color: $black;
+    max-height: 70px;
+    width: 100%;
+    top: 0;
+
+    & .navbar-logo{
+        height: 70px
+    }
+}
