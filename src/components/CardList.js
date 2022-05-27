@@ -48,7 +48,7 @@ const CardList = () => {
             <ButtonsFilter category={allCategories} filter={filter} active={selected}/>
             <div className="gs-grid">
                 {filters.slice(0, visible).map(data =>
-                    <Card title={data.title} key={data.id} />
+                    <Card title={data.title} key={data.id} imageUrl={data.meta.thumbnail.url}/>
 
                 )}
             </div>
