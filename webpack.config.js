@@ -27,9 +27,9 @@ module.exports = (env, { mode }) => {
             new MiniCssExtractPlugin(),
             new CopyPlugin({
                 patterns: [
-                    { from: './src/assets/Images', to: path.resolve(__dirname, 'build/assets/Images') },
+                    { from: './src/assets/Images', to: path.resolve(__dirname, 'build/assets/images') },
                     { from: './src/assets/css/', to: path.resolve(__dirname, 'build/assets/css/') },
-                    { from: './src/assets/Fonts/', to: path.resolve(__dirname, 'build/assets/Fonts/') },
+                    { from: './src/assets/Fonts/', to: path.resolve(__dirname, 'build/assets/fonts/') },
                 ],
             }),
         ],
@@ -67,8 +67,8 @@ module.exports = (env, { mode }) => {
                         {
                             loader: 'file-loader',
                             options: {
-                                publicPath: path.resolve(__dirname, '/assets/Images'),
-                                outputPath: 'assets/Images',
+                                publicPath: path.resolve(__dirname, '/assets/images'),
+                                outputPath: 'assets/images',
                             }
                         },
                     ],
