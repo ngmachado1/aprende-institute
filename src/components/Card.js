@@ -5,7 +5,7 @@ function Card({title, imageUrl}) {
     <div className="sm-col-12 md-col-3">
     <div className="card">
         <div className="image-card">
-            <img src={imageUrl} alt="" />
+            <img src={imageUrl} alt="" loading='lazy'/>
         </div>
         <div className="body-card">
             <h5>{title.rendered}</h5>
